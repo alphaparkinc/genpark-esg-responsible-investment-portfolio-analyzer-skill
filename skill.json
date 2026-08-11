@@ -1,0 +1,35 @@
+{
+  "name": "genpark-esg-responsible-investment-portfolio-analyzer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Responsible & ESG investment portfolio analyzer, risk metric evaluator & asset allocator.",
+  "author": "genpark",
+  "category": "finance",
+  "tags": [
+    "esg-investing",
+    "portfolio-analyzer",
+    "responsible-finance",
+    "risk-evaluator",
+    "ph-august11"
+  ],
+  "inputs": {
+    "portfolio_holdings": {
+      "type": "array"
+    },
+    "esg_preference": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "esg_rating": {
+      "type": "string"
+    },
+    "carbon_footprint_tonnes": {
+      "type": "number"
+    },
+    "rebalancing_suggestions": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
